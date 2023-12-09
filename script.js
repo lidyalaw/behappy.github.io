@@ -30,7 +30,7 @@ function getQuotes() {
     headers: {
       Accept: 'application/json'
     },
-    href: 'quotes.json',
+    url: 'https://gist.githubusercontent.com/lidyalaw/dc3aa3f9171d94e7262d61ad9b40743e/raw/adb4150feec3c96747eadb7bb34e9e4675244482/quotes.json',
     success: function (jsonQuotes) {
       if (typeof jsonQuotes === 'string') {
         quotesData = JSON.parse(jsonQuotes);
